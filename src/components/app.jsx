@@ -3,6 +3,8 @@ import NavBar from './navbar.jsx';
 import Banner from './banner.jsx';
 import Cards from './cards.jsx';
 import Contact from './contact.jsx';
+import Footer from './footer.jsx';
+import PreFooter from './prefooter.jsx';
 
 
 class App extends Component {
@@ -16,6 +18,8 @@ class App extends Component {
         </div>
         <Cards />
         <Contact />
+        <PreFooter />
+        <Footer />
       </div>
       )
   }
