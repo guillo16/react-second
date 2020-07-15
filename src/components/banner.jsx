@@ -5,6 +5,7 @@ class Banner extends Component {
     return(
       <div className="banner">
       <p>Welcome to react</p>
+      <p>Please work this out</p>
       </div>
       )
   }
