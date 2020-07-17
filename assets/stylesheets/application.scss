@@ -1,18 +1,9 @@
+@import './components/banner';
 body {
   font-family: Helvetica;
 }
 
-.banner {
-  background-position: center;
-  background-size: cover;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  p {
-    color: white;
-  }
-}
+
 
 
 .cards-container {
