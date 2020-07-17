@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 
-class Banner extends Component {
-  render() {
-    return(
-      <div className="banner">
+const Banner = () => {
+  return(
+    <div className="banner" style={{backgroundColor: 'red'}}>
       <p>Welcome to react</p>
       <p>Please work this out</p>
-      </div>
-      )
-  }
+    </div>
+    )
 }
 
 export default Banner
-
-
