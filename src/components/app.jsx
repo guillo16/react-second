@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import NavBar from './navbar.jsx';
-import Banner from './banner.jsx';
-import Cards from './cards.jsx';
-import Contact from './contact.jsx';
-import Footer from './footer.jsx';
-import PreFooter from './prefooter.jsx';
+import NavBar from './navbar';
+import Banner from './banner';
+import Cards from './cards';
+import Contact from './contact';
+import Footer from './footer';
+import PreFooter from './prefooter';
+import Table from './table';
 
 
 class App extends Component {
