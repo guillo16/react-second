@@ -1,47 +1,6 @@
-@import './components/banner';
+@import './components/index';
+
 body {
   font-family: Helvetica;
 }
 
-
-
-
-.cards-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.cards {
-  img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-}
-
-
-.clicked {
-  color: red;
-}
-
-
-.guillo {
-  color: green;
-  &:hover {
-    color: red;
-  }
-}
-
-.border {
-  border: 1px solid black;
-  font-size: 23px;
-}
-
-@media(max-width: 575px) {
-  .guillo {
-    display: none;
-  }
-}

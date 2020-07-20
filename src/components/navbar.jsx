@@ -1,35 +1,24 @@
 import React, { Component } from 'react';
-import NavBarLogo from './navbar_logo';
 
 class NavBar extends Component {
-  render(){
-    return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <NavBarLogo name="Guillo" />
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-      </button>
+  render() {
+    return(
+      <div className="new-navbar d-flex justify-content-between align-items-center">
+        <div className="logo">
+          <h2>GUILLo</h2>
+        </div>
+        <div className="nav-links">
+          <a href="#">Shop</a>
+          <a href="#">Trend</a>
+          <a href="#">About</a>
+        </div>
+        <div className="nav-links">
+          <a href="#">User</a>
+        </div>
 
-      <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li className="nav-item active">
-      <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-      </li>
-      <li className="nav-item">
-      <a className="nav-link" href="#">Link</a>
-      </li>
-      <li className="nav-item">
-      <a className="nav-link disabled" >Disabled</a>
-      </li>
-      </ul>
       </div>
-      </nav>
       )
-  };
+  }
 }
 
-export default NavBar;
-
-
-
-
+export default NavBar
