@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FlatList from './flat_list';
 import flats from '../data/flats';
-import  Example from './new_flat';
 
 class App extends Component {
   constructor(props) {
@@ -13,14 +12,13 @@ class App extends Component {
   }
 
   selectFlat = (index) => {
-    this.setState( {selectedFlat: flats[index]} );
+    this.setState( { selectedFlat: flats[index] } );
   }
 
   render() {
     return (
       <div>
         <FlatList flats={this.state.flats} selectFlat={this.selectFlat} selectedFlat={this.state.selectedFlat}/>
-        <Example />
       </div>
       )
   }

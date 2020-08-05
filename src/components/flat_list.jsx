@@ -3,8 +3,8 @@ import Flat from './flat';
 
 const FlatList = (props) => {
 
- const renderFlats = () => props.flats.map(flat => {
-  return <Flat price={flat.price} key={flat.price} name={flat.name} imageUrl={flat.imageUrl} priceCurrency={flat.priceCurrency} selectFlat={flat.selectFlat} />
+ const renderFlats = () => props.flats.map((flat, index) => {
+  return <Flat flat={flat} key={flat.price}  selectFlat={props.selectFlat} selected={flat.name === props.selectedFlat.name} index={index} />
 })
  return(
   <div className="flat-list">
