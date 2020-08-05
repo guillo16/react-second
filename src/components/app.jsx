@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import NavBar from './navbar';
-import Banner from './banner';
-import Cards from './cards';
-import Contact from './contact';
-import Footer from './footer';
-import PreFooter from './prefooter';
-import Table from './table';
-
+import FlatList from './flat_list';
+import flats from '../data/flats';
+import  Example from './new_flat';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedFlat: flats[0],
+      flats
+    }
+  }
+
+  selectFlat = (index) => {
+    this.setState( {selectedFlat: flats[index]} );
+  }
+
   render() {
     return (
       <div>
-        <NavBar />
-        <Banner />
-        <div className="title">
-          <h2>ABOUT</h2>
-        </div>
-        <Cards />
-        <Contact />
-        <PreFooter />
-        <Footer />
+        <FlatList flats={this.state.flats} selectFlat={this.selectFlat} selectedFlat={this.state.selectedFlat}/>
+        <Example />
       </div>
       )
   }
