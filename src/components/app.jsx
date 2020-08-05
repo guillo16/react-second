@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FlatList from './flat_list'
+import FlatList from './flat_list';
 import flats from '../data/flats';
 
 class App extends Component {
