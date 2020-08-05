@@ -4,6 +4,7 @@ import flats from '../data/flats';
 import SimpleMap from './google_map';
 
 
+
 class App extends Component {
   constructor(props) {
     super(props);
